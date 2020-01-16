@@ -1,0 +1,28 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["hi there", "how are you", "is anyone there?","hey","hola", "hello", "good day", "hi"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["bye", "see you later", "goodbye", "nice chatting to you, bye", "till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["thanks", "thank you", "that's helpful", "awesome, thanks", "thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["how you could help me", "what's your work", "what you can do", "what help you provide", "how you can be helpful", "what support is offered"],
+         "responses": ["I can guide you through our bussiness information", "Offering support for our bussiness information"],
+         "context": [""]
+        }
+   ]
+}
