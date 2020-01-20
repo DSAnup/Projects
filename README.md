@@ -13,18 +13,14 @@ Python Folder:
 Here is some sample of my works:
 
   http://grauk.org/,
-  http://furniturestorm.com/,
-  http://www.worldtravelerkazi.com/,
   http://hotjobsbd.com/,
   http://sdtibd.com/,
   http://primefoodbd.com/, 
   http://texsearchbd.com/, 
   http://kheyabd.org/, 
-  http://primeassetdl.com/, 
-  http://www.forexwave-expert.com/, 
+  http://primeassetdl.com/,  
   http://epwdict.com/, 
   https://deshnetbd.com/,
-  http://yusufnoor.info/demo/, 
   http://lifecarebd.com/, 
   http://maptvonline.net/, 
   http://anwarlandmark.com/
