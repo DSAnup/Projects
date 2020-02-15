@@ -5,60 +5,31 @@
 {% block content %}
 
 <!-- Home -->
-
+{% for message in messages%}
+        <h3> {{ message }}</h3>
+{% endfor %}
 <div class="home">
 
 	<!-- Home Slider -->
 	<div class="home_slider_container">
 		<div class="owl-carousel owl-theme home_slider">
-
+			{% for slide in slider %}
 			<!-- Slide -->
 			<div class="owl-item">
-				<div class="background_image" style="background-image:url({% static 'images/home_slider.jpg'%})"></div>
+				<div class="background_image" style="background-image:url({{slide.img.url}})"></div>
 				<div class="home_slider_content_container">
 					<div class="container">
 						<div class="row">
 							<div class="col">
 								<div class="home_slider_content">
-									<div class="home_title"><h2>Let us take you away</h2></div>
+									<div class="home_title"><h2>{{slide.title}}</h2></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<!-- Slide -->
-			<div class="owl-item">
-				<div class="background_image" style="background-image:url({% static 'images/home_slider.jpg'%})"></div>
-				<div class="home_slider_content_container">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<div class="home_slider_content">
-									<div class="home_title"><h2>Let us take you away</h2></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Slide -->
-			<div class="owl-item">
-				<div class="background_image" style="background-image:url({% static 'images/home_slider.jpg'%})"></div>
-				<div class="home_slider_content_container">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<div class="home_slider_content">
-									<div class="home_title"><h2>Let us take you away</h2></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			{% endfor %}
 
 		</div>
 
@@ -106,39 +77,18 @@
 			<div class="col">
 				<div class="intro_container">
 					<div class="row">
-
+						{% for intro in intros %}
 						<!-- Intro Item -->
 						<div class="col-lg-4 intro_col">
 							<div class="intro_item d-flex flex-row align-items-end justify-content-start">
-								<div class="intro_icon"><img src="{% static 'images/beach.svg' %}" alt=""></div>
+								<div class="intro_icon"><img src="{{intro.svgimg.url}}" alt=""></div>
 								<div class="intro_content">
-									<div class="intro_title">Top Destinations</div>
-									<div class="intro_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+									<div class="intro_title">{{intro.title}}</div>
+									<div class="intro_subtitle"><p>{{intro.subtitle}}</p></div>
 								</div>
 							</div>
 						</div>
-
-						<!-- Intro Item -->
-						<div class="col-lg-4 intro_col">
-							<div class="intro_item d-flex flex-row align-items-end justify-content-start">
-								<div class="intro_icon"><img src="{% static 'images/wallet.svg'%}" alt=""></div>
-								<div class="intro_content">
-									<div class="intro_title">The Best Prices</div>
-									<div class="intro_subtitle"><p>Sollicitudin mauris lobortis in.</p></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Intro Item -->
-						<div class="col-lg-4 intro_col">
-							<div class="intro_item d-flex flex-row align-items-end justify-content-start">
-								<div class="intro_icon"><img src="{% static 'images/suitcase.svg'%}" alt=""></div>
-								<div class="intro_content">
-									<div class="intro_title">Amazing Services</div>
-									<div class="intro_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								</div>
-							</div>
-						</div>
+						{% endfor %}
 
 					</div>
 				</div>
@@ -187,7 +137,7 @@
 <!-- Testimonials -->
 
 <div class="testimonials" id="testimonials">
-	<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/testimonials.jpg'%}" data-speed="0.8"></div>
+	<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{homestatic.testiBackground.url}}" data-speed="0.8"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col text-center">
@@ -202,38 +152,18 @@
 				<div class="testimonials_slider_container">
 					<div class="owl-carousel owl-theme testimonials_slider">
 
+						{% for test in testi %}
 						<!-- Slide -->
 						<div class="owl-item text-center">
-							<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+							<div class="testimonial">{{test.quote}}</div>
 							<div class="testimonial_author">
 								<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-									<div>john turner,</div>
-									<div>client</div>
+									<div>{{test.author}}</div>
+									<div>{{test.designation}}</div>
 								</div>
 							</div>
 						</div>
-
-						<!-- Slide -->
-						<div class="owl-item text-center">
-							<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
-							<div class="testimonial_author">
-								<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-									<div>john turner,</div>
-									<div>client</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Slide -->
-						<div class="owl-item text-center">
-							<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
-							<div class="testimonial_author">
-								<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-									<div>john turner,</div>
-									<div>client</div>
-								</div>
-							</div>
-						</div>
+						{% endfor %}
 
 					</div>
 				</div>
@@ -286,7 +216,7 @@
 			<!-- News Sidebar -->
 			<div class="col-xl-4">
 				<div class="travello">
-					<div class="background_image" style="background-image:url({% static 'images/travello.jpg'%})"></div>
+					<div class="background_image" style="background-image:url({{homestatic.bestSide.url}})"></div>
 					<div class="travello_content">
 						<div class="travello_content_inner">
 							<div></div>

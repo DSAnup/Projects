@@ -67,3 +67,30 @@ class IntroAdmin(admin.ModelAdmin):
         return False
 admin.site.register(Intro, IntroAdmin)
 
+class FooterContent(admin.ModelAdmin):
+    def edit(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/change/">Change</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+
+    def delete(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/delete/">Delete</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+    list_display = ('title', 'contact_info', 'edit', 'delete')
+    def has_add_permission(self, request):
+        count = FooterContact.objects.all().count()
+        if count <= 2:
+            return True
+        return False
+admin.site.register(FooterContact, FooterContent)
+
+class HomeFixedContent(admin.ModelAdmin):
+    def edit(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/change/">Change</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+
+    def delete(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/delete/">Delete</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+    list_display = ('testiBackground', 'bestSide', 'footerBack', 'edit', 'delete')
+    def has_add_permission(self, request):
+        count = HomeStatic.objects.all().count()
+        if count == 0:
+            return True
+        return False
+admin.site.register(HomeStatic, HomeFixedContent)

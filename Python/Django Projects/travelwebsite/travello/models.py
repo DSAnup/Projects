@@ -45,3 +45,35 @@ class Intro(models.Model):
     subtitle = models.CharField(max_length=200)
     svgimg = models.FileField(upload_to='svgimg', validators=[FileExtensionValidator(['svg'])])
 
+class FooterContact(models.Model):
+    title = models.CharField(max_length=100)
+    contact_info = RichTextField(blank=True, null=True)
+    svgimg = models.FileField(upload_to='svgimg2', validators=[FileExtensionValidator(['svg'])])
+
+class HomeStatic(models.Model):
+    testiBackground = models.ImageField(upload_to='others')
+    bestSide = models.ImageField(upload_to='others')
+    footerBack = models.ImageField(upload_to='others')
+    copyrighttext = RichTextField(blank=True, null = True)
+    def save(self):
+        if not self.testiBackground:
+          return
+        super(HomeStatic, self).save()
+        image = Image.open(self.testiBackground)
+        image = image.resize((1920, 593), Image.ANTIALIAS)
+        image.save(self.testiBackground.path)
+
+        if not self.bestSide:
+          return
+        super(HomeStatic, self).save()
+        image = Image.open(self.bestSide)
+        image = image.resize((1920, 593), Image.ANTIALIAS)
+        image.save(self.bestSide.path)
+
+        if not self.footerBack:
+          return
+        super(HomeStatic, self).save()
+        image = Image.open(self.footerBack)
+        image = image.resize((1920, 593), Image.ANTIALIAS)
+        image.save(self.footerBack.path)
+
