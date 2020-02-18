@@ -2,6 +2,8 @@ from django.db import models
 from django.core.validators import FileExtensionValidator
 from PIL import Image
 from ckeditor.fields import RichTextField
+from django.db.models import Q
+
 # Create your models here.
 
 class Destination(models.Model):

@@ -15,6 +15,12 @@
     <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/contact.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/contact_responsive.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/news.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/news_responsive.css' %}">
 </head>
 <body>
 
@@ -28,14 +34,14 @@
                 <div class="col">
                     <div class="header_content d-flex flex-row align-items-center justify-content-start">
                         <div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-                            <div class="logo"><a href="index.html">Travello</a></div>
+                            <div class="logo"><a href="/">Travello</a></div>
                             <nav class="main_nav">
                                 <ul class="d-flex flex-row align-items-start justify-content-start">
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About us</a></li>
+                                    <li class="active"><a href="/">Home</a></li>
+                                    <li><a href="about">About us</a></li>
                                     <!--									<li><a href="#">Services</a></li>-->
-                                    <li><a href="news.html">News</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="news">News</a></li>
+                                    <li><a href="contact">Contact</a></li>
                                     {% if user.is_authenticated %}
                                     <li>Hello, {{user.username}}</li>
                                     <li><a href="accounts/logout">Logout</a></li>
@@ -74,16 +80,15 @@
 
     <div class="menu">
         <div class="menu_header d-flex flex-row align-items-center justify-content-start">
-            <div class="menu_logo"><a href="index.html">Travello</a></div>
+            <div class="menu_logo"><a href="/">Travello</a></div>
             <div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
         </div>
         <div class="menu_content">
             <ul>
-                <li><a href="inex.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About us</a></li>
+                <li><a href="news">News</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </div>
         <div class="menu_social">
@@ -98,6 +103,7 @@
             </ul>
         </div>
     </div>
+    {% include 'partials/messages.html' %}
     {% block content %}
 
     {% endblock %}
@@ -115,9 +121,10 @@
                         </div>
                         <div class="newsletter_form_container">
                             <form action="subsciption" method="POST" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
-                                {% csrf_token %}
+
                                 <div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
-                                    <div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" name="name" required="required"><div class="input_border"></div></div>
+
+                                    <div>{% csrf_token %}<input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" name="name" required="required"><div class="input_border"></div></div>
                                     <div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" name="email" required="required"><div class="input_border"></div></div>
                                 </div>
                                 <div><button class="newsletter_button">subscribe</button></div>
@@ -164,5 +171,15 @@
 <script src="{% static 'plugins/easing/easing.js' %}"></script>
 <script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
 <script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/myscript.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+<script src="{%static 'js/contact.js' %}"></script>
+<script src="{% static 'plugins/greensock/TweenMax.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TimelineMax.min.js' %}"></script>
+<script src="{% static 'plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/animation.gsap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+<script src="{% static 'js/about.js' %}"></script>
+<script src="{% static 'js/news.js' %}"></script>
 </body>
 </html>
