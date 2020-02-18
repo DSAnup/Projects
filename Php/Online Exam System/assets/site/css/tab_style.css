@@ -1,0 +1,73 @@
+ul.tabs {
+	font-family: 'oswald', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 29px;
+	border-bottom: 1px solid #555;
+	border-left: 1px solid #edededed;
+	width: 100%;
+	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	-moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	box-shadow: 0px 1px 5px 0px #4a4a4a;
+	background: #555;
+}
+ul.tabs li {
+	float: left;
+	margin: 4px 3px 0px 3px;
+	cursor: pointer;
+	padding: 0px 5px;
+	height: 25px;
+	line-height: 29px;
+	border-bottom: 1px solid #edededed;
+	border-left: none;
+	font-weight: normal;
+	color: #fff;
+	background: #333;
+	overflow: hidden;
+	position: relative;
+	background: #8e8c8c;
+	text-shadow: 1px 1px 1px #666;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+ul.tabs li:hover {
+	background: #333;
+	text-shadow: none;
+}
+ul.tabs li.active {
+	font-weight: normal;
+	color: #7f0000;
+	background: #D8D8D8;
+	border-bottom: 1px solid #D8D8D8;
+	text-shadow: none;
+}
+.tab_container {
+	border: 1px solid #fff;
+	border-top: none;
+	clear: both;
+	float: left;
+	width: 100%;
+	background-image: linear-gradient(bottom, rgb(242,242,242) 11%, rgb(217,217,217) 56%);
+	background-image: -o-linear-gradient(bottom, rgb(242,242,242) 11%, rgb(217,217,217) 56%);
+	background-image: -moz-linear-gradient(bottom, rgb(242,242,242) 11%, rgb(217,217,217) 56%);
+	background-image: -webkit-linear-gradient(bottom, rgb(242,242,242) 11%, rgb(217,217,217) 56%);
+	background-image: -ms-linear-gradient(bottom, rgb(242,242,242) 11%, rgb(217,217,217) 56%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.11, rgb(242,242,242)), color-stop(0.56, rgb(217,217,217)));
+	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	-moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	box-shadow: 0px 1px 5px 0px #4a4a4a;
+	margin-bottom: 10px;
+}
+#search_container {
+	width: auto;
+	margin: 10px auto !important;
+}

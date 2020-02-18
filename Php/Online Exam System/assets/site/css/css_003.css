@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Kreon';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Kreon Light'), local('Kreon-Light'), url(http://themes.googleusercontent.com/static/fonts/kreon/v6/foDwQzChAOJL0-zU6ynhJ_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Kreon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kreon Regular'), local('Kreon-Regular'), url(http://themes.googleusercontent.com/static/fonts/kreon/v6/a5r0-iMPk2rygJI75EuckA.woff) format('woff');
+}

@@ -1,0 +1,118 @@
+
+
+
+h2.application_form_heading{
+	text-align: center;
+	font-size: 25px;
+	padding-top: 0;
+	padding-bottom: 20px;
+	text-decoration: underline;
+}
+
+.money_rec_top p{
+	font-size: 20px;
+}
+.separetorone{
+width: 100%;
+height: 5px;
+background: #000;
+}
+
+.separetortwo{
+margin-top: 1px;
+	width: 100%;
+height: 2px;
+background: #000;
+
+}
+
+.money_rec_top{
+	text-align: center;
+	line-height: 10px;
+	margin-top: 30px;
+	position: relative;
+}
+.bcci_logo{
+	position: absolute;
+	top: 0;
+}
+.bcci_logo img{
+	width: 100px;
+	height: 90px;
+	margin-top: 0;
+	margin-left: 40px;
+	margin-right: 50px;
+}
+.money_rec_top h4{
+	padding-top: 0;
+	margin-top: 0;
+}
+
+
+.developer_info p{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+.top_underline img{
+width: 100%;
+height: 10px;
+}
+
+.table_one{
+	margin-bottom: 10px;
+}
+
+.table_two_mid{
+	float: right;
+	padding-right: 100px;
+}
+
+.table_two_tr{
+	border-left: 2px solid#ABB1BA;
+	border-right: 2px solid#ABB1BA;
+}
+
+.table_two_tr:last-child{
+	border-bottom: 2px solid#ABB1BA;
+}
+
+.posted_reamrk_del{
+	line-height: 1px;
+	margin-top: 20px;
+}
+
+.due_condition{
+	text-transform: uppercase;
+	float: right;
+	font-size: 30px;
+}
+
+.padding_right{
+	padding-right: 5px;
+}
+
+.top_address{
+	line-height: 5px;
+	text-align: center;
+/*	padding-top: 10px;*/
+}
+
+table, td, th{
+   padding-left:5px; 
+}
+
+.all_amount{
+	float: right;
+	padding-right: 10px;
+}
+
+
+.developer_info_top img{
+width: 100%;
+height: 3px;
+padding-bottom: 0;
+}

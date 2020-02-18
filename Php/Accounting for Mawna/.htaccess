@@ -1,0 +1,46 @@
+# <IfModule mod_rewrite.c>
+# RewriteEngine on
+# RewriteBase /accounting/
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.php?/$1 [L]
+# </IfModule>
+
+# <IfModule mod_rewrite.c>
+
+# RewriteEngine on
+# RewriteBase //
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.php/$1 [L]
+
+# </IfModule>
+
+# RewriteCond %{HTTP_HOST} deshnetbd\.com [NC]
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ https://deshnetbd.com/$1 [R,L]
+
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+### Canonicalize codeigniter URLs
+
+# Enforce SSL https://www. 
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+###
+# Removes access to the system folder by users.
+# Additionally this will allow you to create a System.php controller,
+# previously this would not have been possible.
+# 'system' can be replaced if you have renamed your system folder.
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+# Checks to see if the user is attempting to access a valid file,
+# such as an image or css document, if this isn't true it sends the
+# request to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

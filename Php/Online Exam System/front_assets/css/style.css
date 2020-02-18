@@ -1,0 +1,253 @@
+*{
+	margin:0px;
+	padding:0px;
+	outline:0px;
+	}
+	
+img{
+	border:0px;
+	}
+	
+/*ul, ol{
+	list-style-type: number;
+	}*/
+	
+a{
+	text-decoration:none;
+	}
+	
+.clr{
+	clear:both;
+	}
+	
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	}
+
+.header_section{
+	background-color: black!important;
+}
+.top_style{
+	margin-top: 10px;
+}
+.navbar-brand_new {
+	padding: 20px 0px 0px 0px;
+	font-size: 24px;
+	font-weight: 600;
+	color: white;
+}
+.pannel_style{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px !important;
+	background: #66BB6A;
+	margin-top: 25px;
+}
+.event_heading{
+	text-align: center;
+    margin: 0 auto;
+    max-width: 1020px;
+    padding-bottom: 50px;
+	margin-top: 50px;
+    font-weight: 600;
+}
+.event_title{
+	margin-top: 10px;
+	color: #111;
+    font-weight: 700;
+    font-family: Montserrat,sans-serif;
+}
+.event_para{
+	font-size: 17px;
+    margin-bottom: 20px;
+	line-height: 30px;
+	margin: 0 0 10px;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 400;
+    color: #555;
+}
+.btn.outline-btn {
+    background: 0 0;
+    color: #de302f;
+    border: 3px solid #de302f;
+    letter-spacing: 4px;
+    padding: 15px 50px;
+    font-weight: 700;
+}
+.event_icon_style {
+    font-size: 24px!important;
+    border: 1px solid gray;
+    border-radius: 100%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.event_icon_rules{
+	font-size: 24px;
+	color: #111;
+    font-weight: 500;
+    font-family: Montserrat,sans-serif;
+}
+.register_button{
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+.others_event{
+	margin-bottom: 100px;
+}
+.course_des{
+	font-size: 1em;
+    color: #353333;
+	margin: 0 0 10px;
+	box-sizing: border-box;
+	font-family: Open Sans, sans-serif;
+}
+.modules ul li{
+	 margin-bottom: 6px;
+    font-size: .9em;
+}
+.modules ul li .fa{
+	padding-right: 10px;
+}
+.course_name ul li .fa{
+	padding-right: 10px;
+}
+.course_section{
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+.exercise_section{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.about_person{
+	margin-top: 75px;
+}
+.about_section{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.label_style{
+	width: 18.666667%;
+    padding-bottom: 10px;
+}
+.for_pass{
+	padding: 15px;
+}
+.e_b_down{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.author_style{
+	border-bottom: 1px solid gray;
+	padding: 10px 0 10px 0;
+}
+.book_n_style{
+	font-size: 1.2em;
+	margin: 0 0 1em 0;
+    font-weight: normal;
+	color: #000;
+}
+.p_span_style{
+	font-family: OpenSans,sans-serif;
+    font-size: small;
+	border-left: 1px solid #d3d3d3;
+    padding-left: 10px;
+    margin-right: 8px;
+	color: #000;
+}
+.description{
+	width: 80%;
+    overflow: hidden;
+    height: 3em;
+	color: #000;
+}
+.down_style button{
+	bottom: 20px;
+    right: 10px;
+	padding: 2px 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+	background: #00c1d0;
+	border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+	color: white;
+}
+.row_style{
+	border: 1px solid gray;
+}
+.text_b_style{
+	font-size: 16px;
+    font-weight: bold;
+    padding: 10px !important;
+    background: #66BB6A;
+    margin-top: 0;
+}
+.text_b_style .fa{
+	font-size: 24px;
+    float: right;
+    color: white;
+}
+.text_nav ul li{
+	padding: .5em 1em;
+    color: #333;
+}
+.ebook_section{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.pannel_style2{
+	margin-bottom: 100px!important;
+}
+.lect_head{
+	font-size: 33px;
+    margin-top: 0;
+    line-height: 1.225;
+}
+.lect_row_style{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.lect_athor{
+	padding-bottom: 5px;
+    color: #292929;
+}
+.lect_des{
+	font-size: 17px;
+ 	margin: 0 0 10px;
+	font-family: 'Open Sans',sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #030303;
+	margin-top: 25px;
+}
+.control-label2{
+	text-align: left!important;
+	font-size: 12px;
+}
+.password_style{
+	margin-top: 15px;
+}
+.footer_section{
+	background-color: black!important;
+	padding: 25px;
+}
+.foot_bottom_content .col-sm-4 p{
+	color: white!important;
+}
+.foot_nav{
+	text-align: right;
+}
+.foot_nav > ul{
+	list-style: none;
+	float: right;
+}
+.foot_nav > ul> li{
+	float: left;
+}
+.foot_nav > ul > li>  a{
+	font-size: 14px;
+    color: white;
+    padding: 10px 25px 10px 0;
+}

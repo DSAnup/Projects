@@ -1,0 +1,292 @@
+T3,200,700
+T4,200,700
+TSH,600,2000
+"T3,T4,TSH",300,800
+FT3,300,800
+FT4,400,1000
+Thyroglobulin(TG),400,1000
+Anty Thyroglobulin Ab (Anti TPO),400,1000
+Para thyroid hormone(PTH),400,1000
+Prolactin,300,800
+Testosterone,300,800
+Free Testosterone,700,1500
+LH,300,800
+FSH,300,800
+Progesterone,400,900
+Estradiol,400,900
+DHEAS,700,1800
+ACTH,400,900
+Cortisol,400,900
+Growth Hormone,400,1000
+C3,400,1000
+C4,400,1000
+Beta-HCG,400,1000
+AFP,400,1000
+PSA,400,1000
+Free-PSA,700,1600
+CEA,400,1000
+CA-125,400,1000
+CA-19.9,400,1000
+CA-15.3,400,1000
+P-ANCA,700,1600
+C-ANCA,700,1600
+Adenosine deaminase,800,2000
+D-Dimer,1000,2400
+Anti-Chlamydial Antibody,800,2000
+Anti-Sparm Antibody,800,2000
+Anti-H.Pylori IgG + IgM,700,1800
+HIV-p24 Antigen,1000,2000
+Anti-DNA Ab,700,1600
+Rh Antibody titre ,350,800
+"Anti-HIV 1,2",1000,2000
+HBs Ag,250,600
+Hbe Ag,350,800
+Anti-HBs,400,900
+Anti-Hbe,350,800
+Anti-HCV,300,700
+Anti-HBc(total),400,900
+Anti-HAV IgM,400,900
+Anti-HAV IgG,400,900
+Anti-HEV-IgM,400,900
+Anti-HDV IgM,1000,2000
+Anti-HDV IgG,1000,2000
+Anti-Toxo Plasma IgG,500,1200
+Anti-Toxo Plasma IgM,500,1200
+Anti-Rubella IgG ,500,1200
+Anti-Rubella IgM,500,1200
+Anti-HSV IgG,500,1200
+Anti-HSV IgM,500,1200
+Anti-HSV IgG,500,1200
+Anti-HSV IgM,500,1200
+Anti-CMV IgG,500,1200
+Anti-CMV IgM,500,1200
+S.IgE,400,1000
+S.IgM,450,1000
+S.IgG,450,1000
+S.IgA,450,1000
+ANA,400,1000
+ENA PROFILE,4500,6000
+Anti-DS-DNA,500,1000
+Anti-CCP,700,1600
+Anti-Phospholipid Antibody,700,1600
+Anti-Cardiolipin  Antibody,700,1600
+Anti-TB IgM+IgG+IgA,1200,3000
+Anti-Dengu IgM+IgG,800,2000
+Dengu NS-1 Antigen,1000,2000
+Follic Acid,1000,2000
+Follate,1000,2000
+Vitamin B-12,1000,2000
+Vitamin D3,2000,4500
+BNP,2500,4000
+HLA B-27,3000,5000
+Anti-AMH,3000,5000
+ADA,1000,2000
+A+B+DR Typing,15000,20000
+Fibrile Antigen,400,1000
+Rose Waller test,300,700
+CFT for filaria IgM+IgG,800,1800
+ICT for Malaria,400,900
+CFT for Kala Azare,400,900
+Protein-Electrophoresis,1600,2500
+Hb-Electrophoresis,1000,1500
+HbA 1c,400,1000
+Troponin-I,400,1000
+Prothombine Time,250,600
+Albumin,150,300
+Total Protein,200,600
+24 hr Urinary Total Protein,200,600
+ACR,300,600
+CCR,300,600
+APTT,300,800
+S.Amylase,300,800
+S.Lipase,300,800
+S.Aldolase,300,800
+CPK,300,800
+CKMB,300,800
+Alk Phosphate,200,400
+LDH,300,800
+S.Electrolyte,300,700
+S.Calciam,300,700
+Magnesium,400,1000
+Lithum,500,1000
+AG Ratio,400,800
+Egfr,400,800
+Lipid Profile,500,1000
+GT,500,1000
+CK,500,1000
+P1.Lead,1000,2000
+Urine Micro Albumin,500,1000
+FDP,1500,3000
+Factor VIII Assay,1500,3000
+Factor IX Assay,1500,3000
+PBF,200,400
+Coomb's (Direct+Indirect),1000,2000
+Bilirobin(Total+Direct+Indirect),500,1000
+Valprolic Acid,700,1500
+TPHA,400,800
+VDRL(Q+Q),400,800
+S.Iron,400,1200
+Ferritin,400,1200
+TIBC,400,1200
+HBV DNA PCR,7000,8000
+MTB PCR ,5000,5000
+KARYOTYPING,7000,8000
+HB PCR,7000,8000
+URINE FOR CMV DNA PCR (INDIA),10000,150000
+HIV(RNA),7000,10000
+PNP LA3 Genotyping,2000,4000
+IL 28B Genotyping,2000,4000
+Benzodiazepine,500,1100
+Opiates,500,1100
+Cannabinoids,500,1100
+Carbamazepine,400,900
+valproic Acid,400,900
+Phenytoin,400,900
+Urine for C/S,250,600
+Pus for C/S,300,600
+HVS for c/s,250,600
+Stool for c/s,250,600
+Throat swab for c/s,250,600
+skin for c/s,500,1000
+skin for R/E/M,300,700
+Blood for c/s,500,1200
+Sputum for c/s,500,600
+Sputum for AFB(1+2+3 sample),900,1800
+Sputum forGm. Stain,400,800
+Pap's Smear,500,1100
+Body Fluid Study(cyto+Micro+Bioc),1500,2400
+FNAC Any,700,1400
+Small,600,1200
+Medium,1000,2000
+Large,1500,3000
+X-RAY L/S SPINE B/V (DIGITAL),,670
+X-RAY D/L SPINE B/V (DIGITAL),,670
+PLAIN X-RAY ABDOMEN(DIGITAL),,420
+X-RAY FORARM (RADIAS/ULNA)B/V.DIGI,,670
+X-RAY WRIST JOINT B/V (DIGITAL),,670
+X-RAY KNEE JOINT B/V (DIGITAL),,670
+X-RAY ANKLE JOINT B/V (DIGITAL),,670
+X-RAY SHOULDER JOINT B/V (DIGITAL),,670
+X-RAY HIP JOINT B/V (DIGITAL),,670
+X-RAY THIGH/FEMAR JOINT B/V (DIGITAL),,670
+X-RAY SCALP/SKULL  B/V (DIGITAL),,670
+X-RAY SOFT TISSUE NECK (DIGITAL),,470
+X-RAY PELVIS WITH HIP J.A/P VIEW (DIGITAL),,520
+X-RAY IVU,,2520
+X-RAY MANDIBLE (DIGITAL),,470
+X-RAY MASTOID (DIGITAL),,470
+X-RAY LT.LEG B/V (DIGITAL),,670
+X-RAY RT.LEG B/V (DIGITAL),,670
+X-RAY LT HAND B/V (DIGITAL),,670
+X-RAY LT ELBOW JOINT B/V (DIGITAL),,670
+X-RAY RT HAND  B/V (DIGITAL),,670
+X-RAY CERVICAL SPINE LETARAL VIEW,,520
+X-RAY RT FOOT  B/V (DIGITAL),,670
+X-RAY LT FOOT  B/V (DIGITAL),,670
+X-RAY RT.ELBOW JOINT  B/V (DIGITAL),,670
+X-RAY RT CLAVICAL  B/V ,,670
+X-RAY TIBIA/FIBULA  B/V (DIGITAL),,670
+X-RAY RADIAS/ULNA  B/V ,,670
+PHYSIOTHERAPY REGULAR VISIT,,300
+USG OF THYROID(COLOUR DOPPLER),,1400
+USG OF L/A (COLLAR) TO SEE UTERUS&,,1000
+TVS  (COLOUR DOPPLER) STUDY,,1500
+COLOUR DOPPLER STUDY,,1800
+DIGITAL X-RAY GROUP,,0
+X-RAY CHEST P/A VIEW (DIGITAL),,420
+X-RAY CHEST A/P VIEW (DIGITAL),,420
+X-RAY KUB REGION (DIGITAL),,470
+X-RAY PNS OM VIEW (DIGITAL),,420
+X-RAY NASOPHENYX (DIGITAL),,420
+X-RAY NEECK (C/S) B/V (DIGITAL),,670
+FBS,,60
+S. Creatinine,,200
+SGPT/ALT,,150
+HBsAg (Screening-ICT),,400
+Lipid Profile,,600
+CBC,,500
+Urine for RME,,100
+CRP,,250
+S.TSH,,500
+S.Amylase,,640
+2h ABF,,60
+Blood Urea,,200
+SGOT/AST,,150
+HBsAg (Confirmatory-Elisa),,600
+S. Cholesterol,,150
+ESR,,100
+Urine for C/S,,400
+RA or RF,,250
+S. FT3,,600
+PSA,,700
+Semen Analysis,,400
+S.FT4,,600
+Anti-CCP Ab,,1280
+Microalbuminuria,,600
+HB%,,100
+S.HDL,,200
+HBeAg (Viral Load-Elisa),,700
+S.Bilirubin,,100
+S.Electrolytes,,600
+2h AG with 75 gm glucose drink,,150
+HbA1C,,600
+S.Calcium,,200
+Prothrombin Time (PT),,480
+HBV-DNA (Viral Load-PCR),,6400
+S.LDL,,300
+TPC /TCE,,100
+Urine for Ketone Body,,150
+ANA,,800
+Anti-TPO Ab,,800
+Anti H.Pylori Ab,,400
+BL,,60
+S.Uric Acid,,150
+APTT,,640
+Anti-HCV Ab (ICT),,560
+S.TG,,200
+PBF,,500
+Urine for PT,,100
+Anti DS-DNA,,800
+S. Cortisol,,700
+Pus for C/S,,400
+2h AL,,60
+S.Phosphate,,800
+S.Albumin,,200
+Anti-HEV IgGM (each test),,700
+ECG,,200
+S.Ferritin,,800
+Sputum for AFB (2 sample),,800
+ASO Titre,,250
+S.Testosterone,,600
+Throat Swab for C/S,,400
+BD,,60
+eGFR,,600
+S.Total Protein,,400
+Anti-HAV IgG/IgM (each test),,700
+S.Troponin-I,,650
+S. Iron Profile,,2400
+MT,,150
+VDRL,,200
+ICT for Malaria,,500
+Blood for C/S,,960
+RBS,,60
+ACR/PCR,,600
+S.ALP,,200
+BT & CT,,200
+Echocardiography,,1200
+IgE (Elisa),,700
+S.IgE (ICT),,600
+ICT for TB,,500
+TPHA,,300
+ICT for Kala-azar,,500
+"USG of W/A,L/A, KUB, PG.Profile",,1000
+Reflow,,60
+"UTP,UTV, CCR",,900
+GGT,,
+Widal Test,,200
+ETT,,
+Blood Groupig & Rh Typing,,50
+CXR P/A View,,420
+X-Ray PNS O/M View,,420
+X-Ray?Knee B/V (Single Side),,670
+X-Ray L/S Spine B/V,,670

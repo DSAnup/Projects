@@ -1,0 +1,36 @@
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+    .patient_photo img{
+      width: 170px;
+      height: 210px;
+      float: right;
+    }
+    select{
+      width: 100%;
+    }
+    .general_info{
+      line-height: 8px;
+      margin-top: 40px;
+    }
+    .main_heading h2{
+      text-align: center;
+    }
+    table tr{
+      border: 1px solid#3333;
+    }
+
+    .table td, .table th{
+      border: 1px solid#3333;
+    }
+
+h4.s_heading{
+  font-size: 22px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  color: 000;
+}
+
+.info_area p{
+  line-height: 15px;
+}

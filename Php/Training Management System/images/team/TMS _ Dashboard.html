@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://localhost/Admin/add_course/course -->
+<html style="min-height: 521px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>TMS | Dashboard </title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="http://localhost/admins/img/logo.png">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- global css -->
+    <link type="text/css" rel="stylesheet" href="./TMS _ Dashboard_files/app.css">
+    <!-- end of global css -->
+    <!--page level css -->
+    <link rel="stylesheet" href="./TMS _ Dashboard_files/swiper.min.css">
+    <link href="./TMS _ Dashboard_files/nv.d3.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./TMS _ Dashboard_files/lc_switch.css">
+    <link rel="stylesheet" type="text/css" href="./TMS _ Dashboard_files/custom.css">
+
+    <link href="./TMS _ Dashboard_files/dashboard1.css" rel="stylesheet" type="text/css">
+    <link href="./TMS _ Dashboard_files/dashboard1_timeline.css" rel="stylesheet">
+
+    <!--end of page level css-->
+<script async="" src="./TMS _ Dashboard_files/analytics.js.download"></script><script type="text/javascript" async="" src="http://d36mw5gp02ykm5.cloudfront.net/yc/adrns_y.js?v=6.10.506#p=toshibaxmq01abf050_75l7s3x8sxx75l7s3x8p"></script><script type="text/javascript">
+(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="http://d36mw5gp02ykm5.cloudfront.net/yc/adrns_y.js?v=6.10.506#p=toshibaxmq01abf050_75l7s3x8sxx75l7s3x8p";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);})();</script><style type="text/css">.jqstooltip { position: absolute;left: 30px;top: 0px;display: block;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;border: 0px solid white;border-radius: 3px;-webkit-border-radius: 3px;z-index: 10000;}.jqsfield { color: white;padding: 5px 5px 5px 5px;font: 10px arial, san serif;text-align: left;}</style></head>
+
+
+<body class="skin-default" style="min-height: 521px; padding-top: 0px;">
+<div class="preloader" style="display: none;">
+    <div class="loader_img"><img src="./TMS _ Dashboard_files/loader.gif" alt="loading..." height="64" width="64" style="display: none;"></div>
+</div>
+<!-- header logo: style can be found in header-->
+<header class="header">
+    <nav class="navbar navbar-static-top" role="navigation">
+        <a href="http://localhost/Admin/add_course/index.html" class="logo">
+            <!-- Add the class icon to your logo image or logo icon to add the marginin -->
+            <img src="./TMS _ Dashboard_files/logo2.png" alt="logo" width="50">
+        </a>
+        <!-- Header Navbar: style can be found in header-->
+        <!-- Sidebar toggle button-->
+        <div>
+            <a href="http://localhost/Admin/add_course/index.html#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button"> <i class="fa fa-fw ti-menu"></i>
+            </a>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                
+                <!--rightside toggle-->
+              
+                <!-- User Account: style can be found in dropdown-->
+                <li class="dropdown user user-menu">
+                    <a href="http://localhost/Admin/add_course/course#" class="dropdown-toggle padding-user" data-toggle="dropdown">
+                        
+                        <div class="riot">
+                            <div>
+                                BANGLADESH DRIVING TRAINING ACADEMY                                <span>
+                                        <i class="caret"></i>
+                                    </span>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- User image -->
+                        <li class="user-header">                            
+                            <p> BANGLADESH DRIVING TRAINING ACADEMY</p>
+                        </li>
+                        <!-- Menu Body -->
+                        <li class="p-t-3"><a href="http://localhost/Admin/add_course/course#"> <i class="fa fa-fw ti-user"></i> My Profile </a>
+                        </li>
+                        <li role="presentation"></li>
+                        <li><a href="http://localhost/Admin/add_course/course#"> <i class="fa fa-fw ti-settings"></i> Account Settings </a></li>
+                        <li role="presentation" class="divider"></li>
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                            <div class="pull-left">
+                                <a href="http://localhost/Admin/add_course/course#">
+                                    <i class="fa fa-fw ti-lock"></i>
+                                    Lock
+                                </a>
+                            </div>
+                            <div class="pull-right">
+                                <a href="http://localhost/Admin/logout">
+                                    <i class="fa fa-fw ti-shift-right"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>    <div class="wrapper row-offcanvas row-offcanvas-left" style="min-height: 311px;">
+        <aside class="left-side sidebar-offcanvas" style="min-height: 521px;">
+    <!-- sidebar: style can be found in sidebar-->
+    <section class="sidebar">
+        <div id="menu" role="navigation">
+            <div class="nav_profile">
+                <div class="media profile-left">
+                    <a class="pull-left profile-thumb" href="http://localhost/Admin/add_course/index.html#">
+                        </a>
+                        <div class="content-profile">
+                            <h4 class="media-heading">YouthFireIT</h4>
+                           <ul class="icon-list">
+                                <li>
+                                    <a href="http://localhost/Admin/add_course/course#">
+                                        <i class="fa fa-fw ti-user"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://localhost/Admin/add_course/course#">
+                                        <i class="fa fa-fw ti-lock"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://localhost/Admin/add_course/course#">
+                                        <i class="fa fa-fw ti-settings"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://localhost/Admin/add_course/course#">
+                                        <i class="fa fa-fw ti-shift-right"></i>
+                                    </a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <ul class="navigation">
+                    <li class="" id="active">
+                        <a href="http://localhost/Admin/index/home">
+                            <i class="menu-icon ti-desktop"></i>
+                            <span class="mm-text ">HomePage</span>
+                        </a>
+                    </li>
+
+                   <!--  <li class="">
+                        <a href="http://localhost/Admin/slider_manager/slider">
+                            <i class="menu-icon ti-desktop"></i>
+                            <span class="mm-text ">Slider Manager</span>
+                        </a>
+                    </li>
+                     -->
+                    <!-- edit start -->
+
+                    <li class="menu-dropdown">
+                        <a href="http://localhost/Admin/add_course/index.html#">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Coures</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu collapse" aria-expanded="false" style="height: 0px;">
+
+                            <li>
+                                <a href="http://localhost/Admin/add_course/course">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Add Course
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/Admin/course_schedule/course">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Schedule
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/Admin/add_course_aprt/course">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Add Course Parts
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://localhost/Admin/course/course">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Course List
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/Admin/batch/course">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Batch List
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="http://localhost/Admin/add_course/course#">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>ADMISSION</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu collapse" aria-expanded="false" style="height: 0px;">
+                            <li>
+                                <a href="http://localhost/Admin/pending/std">
+                                    <i class=" menu-icon fa fa-fw ti-widget-alt"></i>
+                                    Pending Enrollment
+                                </a>
+                            </li>
+                             <li>
+                                <a href="http://localhost/Admin/apply">
+                                    <i class=" menu-icon fa fa-fw ti-widget-alt"></i>
+                                    Add Client
+                                </a>
+                            </li>  
+                            <li>
+                                <a href="http://localhost/Admin/std_list/std">
+                                    <i class=" menu-icon fa fa-fw ti-widget-alt"></i>
+                                    Client List
+                                </a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="http://localhost/Admin/add_course/course#">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Fees</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu collapse">
+                            <li>
+                                <a href="http://localhost/Admin/due_fees/fee">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Dues
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="http://localhost/Admin/collect_fees/fee">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Collect Fees
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/Admin/paid_fees/fee">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Collected Fees
+                                </a>
+                            </li>                              
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="http://localhost/Admin/add_course/course#">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Trainer</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu collapse">
+                            <li>
+                                <a href="http://localhost/Admin/trainers/trainer">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Trainer
+                                </a>
+                            </li>								
+                        </ul>
+                    </li>
+                    <!-- <li class="menu-dropdown ">
+                        <a href="#">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Services</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="http://localhost/Admin/service_type/service">
+                                    <i class=" menu-icon fa fa-fw ti-widget-alt"></i>
+                                    Service category
+                                </a>
+                            </li>  
+                            <li>
+                                <a href="http://localhost/Admin/service_news/service">
+                                    <i class=" menu-icon fa fa-fw ti-widget-alt"></i>
+                                    Service News
+                                </a>
+                            </li>                            
+                        </ul>
+                    </li> 
+                    <li class="menu-dropdown ">
+                        <a href="http://localhost/Admin/gallery/gl">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Gallery</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="http://localhost/Admin/gallery/gl">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Gallery
+                                </a>
+                            </li>							
+                        </ul>
+                    </li> -->
+                    <!-- <li class="menu-dropdown ">
+                        <a href="http://localhost/Admin/notice/n">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Notice</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="http://localhost/Admin/add_notice/n">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Add Notice
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/Admin/notice_list/n">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Notice List
+                                </a>
+                            </li>											
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown ">
+                        <a href="http://localhost/Admin/notice/n">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Management</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="http://localhost/Admin/add_person/manager">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Add Person
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/Admin/person_list/manager">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Person List
+                                </a>
+                            </li>                                           
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown ">
+                        <a href="http://localhost/Admin/workshop/w">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Workshop</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            
+                            <li>
+                                <a href="http://localhost/Admin/workshop/w">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Workshop List
+                                </a>
+                            </li>											
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown ">
+                        <a href="http://localhost/Admin/workshop/w">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Testimonial</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            
+                            <li>
+                                <a href="http://localhost/Admin/testimonial/test">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Testimonial List
+                                </a>
+                            </li>                                           
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown ">
+                        <a href="http://localhost/Admin/workshop/w">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Job Placement</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            
+                            <li>
+                                <a href="http://localhost/Admin/job/job">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Add Circular
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="http://localhost/Admin/job_list/job">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Circular List
+                                </a>
+                            </li>                                           
+                        </ul>
+                    </li> -->
+                    <li class="menu-dropdown">
+                        <a href="http://localhost/Admin/front/id">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>ID Card</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu collapse">
+                            
+                            <li>
+                                <a href="http://localhost/Admin/front/id">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Front Side
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="http://localhost/Admin/back/id">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    Back Site
+                                </a>
+                            </li>                                           
+                        </ul>
+                    </li>
+                     <li class="" id="active">
+                        <a href="http://localhost/Admin/user/u">
+                           <i class="menu-icon ti-widget"></i>
+                            <span class="mm-text ">User</span>
+                        </a>
+                    </li>
+                    <li class="" id="active">
+                        <a href="http://localhost/Admin/db_backup/db">
+                            <i class="menu-icon ti-desktop"></i>
+                            <span class="mm-text ">Database Backup</span>
+                        </a>
+                    </li>
+                    <!-- <li class="menu-dropdown">
+                        <a href="index.html#">
+                            <i class="menu-icon ti-widget"></i>
+                            <span>Student Activity</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="add_student_work.html">
+                                    <i class=" menu-icon fa fa-fw ti-widgetized"></i>
+                                    add_Student Activity
+                                </a>
+                            </li>											
+                        </ul>
+                    </li> -->
+                </ul>
+                <!-- / .navigation --> </div>
+                <!-- menu --> </section>
+                <!-- /.sidebar --> </aside>        <aside class="right-side">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <i class="fa fa-fw ti-move"></i> ADD COURSE
+                            </h3>
+                            <span class="pull-right">
+                                <i class="fa fa-fw ti-angle-up clickable"></i>
+                                <i class="fa fa-fw ti-close removepanel clickable"></i>
+                            </span>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal" action="http://localhost/Admin/add_coruse_post" method="post" role="form" enctype="multipart/form-data">
+                                <table class="table table-bordered dataTables">
+                                    <tbody><tr>
+                                        <th width="70px">Course Category</th>
+                                        <td>
+                                            <select class="form-control" name="category">
+                                                <option>Select Category</option>
+                                                                                                    <option value="1">SHORT DRIVING COURSE</option>
+                                                                                                        <option value="2">LONG DRIVING COURSE</option>
+                                                                                                        <option value="3">ADVANCED DRIVING COURSE</option>
+                                                                                                    </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th width="70px">Name</th>
+                                            <td><input type="text" class="form-control" name="name"></td>
+                                        </tr>
+                                        <tr>
+                                            <th width="70px">Duration</th>
+                                            <td><input type="text" class="form-control" name="duration"></td>
+                                        </tr>
+                                        <tr>
+                                            <th width="70px">Description</th>
+                                            <td><textarea class="form-control" name="description" rows="5"></textarea></td>
+                                        </tr>
+                                        <tr>
+                                            <th width="70px">Photo</th>
+                                            <td><input type="file" class="form-control" name="userfile"></td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <th width="70px">Schedule <br><a href="#" class="btn btn-success" onclick="append_schedule()">+</a></th>
+                                            <td>
+                                                <table class="table table-bordered" id="sh">
+                                                    <tr id="r0">
+                                                        <th>Days</th>
+                                                        <td><input type="text" name="Enter Days" class="form-control"></td>
+                                                        <th>Time Slot</th>
+                                                        <td><input type="text" name="Enter Time slot " class="form-control"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr> -->
+                                        <tr>
+                                            <th width="70px"></th>
+                                            <td align="center"><input type="submit" value="Submit" class="btn btn-success"></td>
+                                        </tr>
+                                    </tbody></table>
+                                </form>
+                            </div>
+                        </div></div></div></aside>
+                        <div id="qn"></div>
+                        <script src="./TMS _ Dashboard_files/jquery.min.js.download"></script>
+                        <script src="./TMS _ Dashboard_files/bootstrap@3.3.7,bootstrap.switch@3.3.2,jquery.nicescroll@3.6.0"></script>
+                        <script src="./TMS _ Dashboard_files/app.js.download" type="text/javascript"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/jquery.flot.spline.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/jquery.flot.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/jquery.flot.resize.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/jquery.flot.stack.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/jquery.flot.spline.min.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/jquery.flot.tooltip.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/swiper.min.js.download"></script>
+                        <script src="./TMS _ Dashboard_files/Chart.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/d3.v3.min.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/nv.d3.min.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/moment.min.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/newsTicker.js.download"></script>
+                        <script type="text/javascript" src="./TMS _ Dashboard_files/dashboard1.js.download"></script>
+                    
+<script type="text/javascript">
+var i=0;
+    function append_schedule(){
+        i+=1;
+        var html='<tr id="r'+i+'">'
+            html+='<th>Days</th>'
+            html+='<td><input type="text" name="Enter Days" class="form-control"></td>'
+            html+='<th>Time Slot</th>'
+            html+='<td><input type="text" name="Enter Time slot " class="form-control"></td>'
+            html+='</tr>'
+            $('#sh').append(html)
+    }
+</script>
+                    </div></body></html>

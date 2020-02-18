@@ -1,0 +1,72 @@
+.input-group-sm > .input-group-addon {
+    padding : 3px 10px;
+}
+.input-group-lg > .input-group-addon {
+    padding : 9px 16px;
+}
+.has-success .input-group-addon,
+.has-error .input-group-addon {
+    color : #fff;
+}
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+    z-index : 0 !important;
+}
+.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+    margin-left: 18px;
+}
+.p-t-24 {
+    padding-top : 24px !important;
+}
+.form-bordered .form-group > div {
+    padding     : 15px;
+    border-left : 1px solid #efefef;
+}
+.form-bordered .form-group {
+    margin        : 0;
+    border-bottom : 1px solid #efefef;
+}
+.form-bordered .control-label {
+    padding-top   : 24px !important;
+    margin-bottom : 0;
+    text-align    : right;
+}
+.form-bordered-row .form-group {
+    margin        : 0;
+    border-bottom : 1px solid #efefef;
+}
+.form-bordered-row .control-label {
+    padding-top   : 24px !important;
+    margin-bottom : 0;
+    text-align    : right;
+}
+.form-bordered-row .form-group > div {
+    padding : 15px;
+}
+.right_aligned button {
+    margin-left : 7px;
+}
+.has-success .input-group-addon,
+.has-error .input-group-addon {
+    color : #555;
+}
+.proc {
+    position : relative;
+    top      : -25px;
+    left     : 95%;
+}
+@media only screen and (max-width : 768px) {
+    .form-bordered .form-group > div {
+        border : none;
+    }
+}
+@media only screen and (max-width : 425px) {
+    .proc {
+        position : relative;
+        top      : -25px;
+        left     : 91%;
+    }
+}
+.m-t-ng-10 {
+    margin-top : -10px;
+}
