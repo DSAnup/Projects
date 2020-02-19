@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'ckeditor',
 ]
 
+# BOOTSTRAP_ADMIN_SIDEBAR_MENU = False
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

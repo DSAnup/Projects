@@ -5,11 +5,18 @@ from ckeditor.fields import RichTextField
 from django.db.models import Q
 
 # Create your models here.
+class CategoryDes(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
 
 class Destination(models.Model):
+    category_id = models.ForeignKey(CategoryDes, blank=True, null=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     img = models.ImageField(upload_to='pics')
     # desc = models.TextField()
+    subtitle = models.CharField(max_length=150, blank=True, null=True)
     desc = RichTextField(blank=True, null=True)
     price = models.IntegerField()
     offer = models.BooleanField(default=False)

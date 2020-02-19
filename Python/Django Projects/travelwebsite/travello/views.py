@@ -35,7 +35,7 @@ def subsciption(request):
         messages.error(request, 'Sorry')
         return redirect('/')
 
-def search_query(request):
+def destinations(request):
     city = request.POST['city']
     budget = request.POST['budget']
     footercontact = FooterContact.objects.all()
@@ -46,7 +46,7 @@ def search_query(request):
     ).all() | Destination.objects.filter(
         price__contains = budget
     ).all()
-    return render(request, 'search_result.html', {'result':res,
+    return render(request, 'destinations.html', {'result':res,
                                                   'footer': footercontact,
                                                   'testi': testi,
                                                   'homestatic': homesta})
