@@ -46,10 +46,13 @@ def destinations(request):
     ).all() | Destination.objects.filter(
         price__contains = budget
     ).all()
+    cate = CategoryDes.objects.all()
     return render(request, 'destinations.html', {'result':res,
                                                   'footer': footercontact,
                                                   'testi': testi,
-                                                  'homestatic': homesta})
+                                                  'homestatic': homesta,
+                                                    'category': cate
+                                                 })
 
 def about(request):
     footercontact = FooterContact.objects.all()

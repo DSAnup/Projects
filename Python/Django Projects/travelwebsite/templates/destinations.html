@@ -41,9 +41,11 @@
                                 <span class="sorting_text">Categories</span>
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                 <ul>
-                                    <li class="num_sorting_btn"><span>Category</span></li>
-                                    <li class="num_sorting_btn"><span>Category</span></li>
-                                    <li class="num_sorting_btn"><span>Category</span></li>
+                                    {% for cat in category %}
+                                    <li class="num_sorting_btn" ><span>{{cat.name}}</span></li>
+                                    {% endfor %}
+<!--                                    <li class="num_sorting_btn"><span>Category</span></li>-->
+<!--                                    <li class="num_sorting_btn"><span>Category</span></li>-->
                                 </ul>
                             </li>
                         </ul>

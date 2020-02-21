@@ -86,3 +86,18 @@ class HomeStatic(models.Model):
         image = image.resize((1920, 593), Image.ANTIALIAS)
         image.save(self.footerBack.path)
 
+class about_us_fixed(models.Model):
+    brief = RichTextField(blank=True, null=True)
+    aboutimg = models.ImageField(upload_to='others')
+    whybackground = models.ImageField(upload_to='others')
+
+class why_choose_us(models.Model):
+    icon = models.FileField(upload_to='why_choose', validators=[FileExtensionValidator(['svg'])])
+    img = models.ImageField(upload_to='why_choose')
+    title = models.CharField(max_length=100)
+    shortdesc = models.CharField(max_length=200)
+
+class team(models.Model):
+    img = models.ImageField(upload_to='team')
+    name = models.CharField(max_length=100)
+    shortdesc = models.CharField(max_length=200)
