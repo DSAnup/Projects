@@ -6,6 +6,5 @@ urlpatterns = [
     path('subsciption', views.subsciption, name = 'subsciption'),
     path('destinations', views.destinations, name = 'destinations'),
     path('about', views.about, name = 'about'),
-    path('contact', views.contact, name = 'contact'),
-    path('news', views.news, name = 'news')
+    path('contact', views.contact, name = 'contact')
 ]

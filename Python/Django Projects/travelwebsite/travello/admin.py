@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.utils.html import format_html
+from django.shortcuts import redirect
 
 from .models import *
 # Register your models here.
@@ -96,3 +97,49 @@ class HomeFixedContent(admin.ModelAdmin):
             return True
         return False
 admin.site.register(HomeStatic, HomeFixedContent)
+
+class AboutUs(admin.ModelAdmin):
+    def edit(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/change/">Change</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+
+    def delete(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/delete/">Delete</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+    def description(self, obj):
+        str_slice = obj.brief[:40]+'...'
+        return format_html(str_slice)
+    list_display = ('description', 'aboutimg', 'whybackground', 'edit', 'delete')
+    def has_add_permission(self, request):
+        count = about_us_fixed.objects.all().count()
+        if count == 0:
+            return True
+        return False
+admin.site.register(about_us_fixed, AboutUs)
+
+class WhyChoose(admin.ModelAdmin):
+    def edit(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/change/">Change</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+
+    def delete(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/delete/">Delete</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+    def description(self, obj):
+        str_slice = obj.shortdesc[:40]+'...'
+        return format_html(str_slice)
+    list_display = ( 'title', 'description', 'img', 'edit', 'delete')
+    def has_add_permission(self, request):
+        count = why_choose_us.objects.all().count()
+        if count <= 2:
+            return True
+        return False
+admin.site.register(why_choose_us, WhyChoose)
+
+class OurTeam(admin.ModelAdmin):
+    def edit(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/change/">Change</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+
+    def delete(self, obj):
+        return format_html('<a class="btn" href="/admin/{0}/{1}/{2}/delete/">Delete</a>'.format(obj._meta.app_label, obj._meta.object_name, obj.id).lower())
+    def description(self, obj):
+        str_slice = obj.shortdesc[:40]+'...'
+        return format_html(str_slice)
+    list_display = ( 'name', 'description', 'img', 'edit', 'delete')
+admin.site.register(team, OurTeam)

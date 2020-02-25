@@ -2,7 +2,7 @@ from django.db import models
 from django.core.validators import FileExtensionValidator
 from PIL import Image
 from ckeditor.fields import RichTextField
-from django.db.models import Q
+from django.db.models import Q, F
 
 # Create your models here.
 class CategoryDes(models.Model):
@@ -87,9 +87,11 @@ class HomeStatic(models.Model):
         image.save(self.footerBack.path)
 
 class about_us_fixed(models.Model):
-    brief = RichTextField(blank=True, null=True)
+    brief = RichTextField(blank=True, null=True, verbose_name='Description About')
     aboutimg = models.ImageField(upload_to='others')
     whybackground = models.ImageField(upload_to='others')
+    class Meta:
+        verbose_name = "About Us Section"
 
 class why_choose_us(models.Model):
     icon = models.FileField(upload_to='why_choose', validators=[FileExtensionValidator(['svg'])])
@@ -97,7 +99,22 @@ class why_choose_us(models.Model):
     title = models.CharField(max_length=100)
     shortdesc = models.CharField(max_length=200)
 
+    class Meta:
+        verbose_name = 'Why Choose Us'
+        ordering = ['-title'] #desc
+
 class team(models.Model):
-    img = models.ImageField(upload_to='team')
+    img = models.ImageField(upload_to='team', verbose_name='Picture')
     name = models.CharField(max_length=100)
     shortdesc = models.CharField(max_length=200)
+    def save(self):
+        if not self.img:
+            return
+        super(team, self).save()
+        image = Image.open(self.img)
+        image = image.resize((195, 195), Image.ANTIALIAS)
+        image.save(self.img.path)
+
+    class Meta:
+        verbose_name = 'Our Team'
+        ordering = ['name'] #asc

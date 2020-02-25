@@ -39,11 +39,11 @@
                             <div class="logo"><a href="/">Travello</a></div>
                             <nav class="main_nav">
                                 <ul class="d-flex flex-row align-items-start justify-content-start">
-                                    <li class="active"><a href="/">Home</a></li>
-                                    <li><a href="about">About us</a></li>
+                                    <li {% if request.path == '/' %} class="active"{% endif %}><a href="/">Home</a></li>
+                                    <li {% if request.path == '/about' %} class="active"{% endif %}><a href="/about">About us</a></li>
                                     <!--									<li><a href="#">Services</a></li>-->
-                                    <li><a href="news">News</a></li>
-                                    <li><a href="contact">Contact</a></li>
+                                    <li {% if request.path == '/news/' %} class="active"{% endif %}><a href="/news">News</a></li>
+                                    <li {% if request.path == '/contact' %} class="active"{% endif %}><a href="/contact">Contact</a></li>
                                     {% if user.is_authenticated %}
                                     <li>Hello, {{user.username}}</li>
                                     <li><a href="accounts/logout">Logout</a></li>
