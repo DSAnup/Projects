@@ -141,5 +141,5 @@ class OurTeam(admin.ModelAdmin):
     def description(self, obj):
         str_slice = obj.shortdesc[:40]+'...'
         return format_html(str_slice)
-    list_display = ( 'name', 'description', 'img', 'edit', 'delete')
+    list_display = ( 'name', 'description', 'img', 'date', 'edit', 'delete')
 admin.site.register(team, OurTeam)

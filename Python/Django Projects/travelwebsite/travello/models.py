@@ -3,8 +3,10 @@ from django.core.validators import FileExtensionValidator
 from PIL import Image
 from ckeditor.fields import RichTextField
 from django.db.models import Q, F
-
+from django.utils import timezone
 # Create your models here.
+
+today = timezone.datetime.now()
 class CategoryDes(models.Model):
     name = models.CharField(max_length=50)
 
@@ -107,6 +109,7 @@ class team(models.Model):
     img = models.ImageField(upload_to='team', verbose_name='Picture')
     name = models.CharField(max_length=100)
     shortdesc = models.CharField(max_length=200)
+    date = models.DateTimeField(default=today, blank=True)
     def save(self):
         if not self.img:
             return

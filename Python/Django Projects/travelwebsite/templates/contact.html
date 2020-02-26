@@ -28,15 +28,15 @@
                         <ul>
                             <li>
                                 <div>address:</div>
-                                <div>1481 Creekside Lane Avila Beach, CA 931</div>
+                                <div>{{address.address}}</div>
                             </li>
                             <li>
                                 <div>phone:</div>
-                                <div>+53 345 7953 32453</div>
+                                <div>{{address.phone}}</div>
                             </li>
                             <li>
                                 <div>email:</div>
-                                <div>yourmail@gmail.com</div>
+                                <div>{{address.email}}</div>
                             </li>
                         </ul>
                     </div>
@@ -46,18 +46,19 @@
             <!-- Contact Form -->
             <div class="col-lg-6">
                 <div class="contact_form_container">
-                    <form action="#" id="contact_form" class="contact_form">
-                        <div style="margin-bottom: 18px"><input type="text" class="contact_input contact_input_name inpt" placeholder="Your Name" required="required"><div class="input_border"></div></div>
+                    <form id="contact_form" class="contact_form" method="post">
+                        {% csrf_token %}
+                        <div style="margin-bottom: 18px"><input type="text" class="contact_input contact_input_name inpt" name="name" placeholder="Your Name" required="required"><div class="input_border"></div></div>
                         <div class="row">
                             <div class="col-lg-6" style="margin-bottom: 18px">
-                                <div><input type="text" class="contact_input contact_input_email inpt" placeholder="Your E-mail" required="required"><div class="input_border"></div></div>
+                                <div><input type="text" class="contact_input contact_input_email inpt" name="email" placeholder="Your E-mail" required="required"><div class="input_border"></div></div>
                             </div>
                             <div class="col-lg-6" style="margin-bottom: 18px">
-                                <div><input type="text" class="contact_input contact_input_subject inpt" placeholder="Subject" required="required"><div class="input_border"></div></div>
+                                <div><input type="text" class="contact_input contact_input_subject inpt" name="subject" placeholder="Subject" required="required"><div class="input_border"></div></div>
                             </div>
                         </div>
-                        <div><textarea class="contact_textarea contact_input inpt" placeholder="Message" required="required"></textarea><div class="input_border" style="bottom:3px"></div></div>
-                        <button class="contact_button">send</button>
+                        <div><textarea class="contact_textarea contact_input inpt" placeholder="Message" name="message" required="required"></textarea><div class="input_border" style="bottom:3px"></div></div>
+                        <button class="contact_button" type="submit">send</button>
                     </form>
                 </div>
             </div>
@@ -66,10 +67,9 @@
 </div>
 
 <!-- Map -->
-
 <div class="container-fluid">
     <div class="map-responsive">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58417.427398821776!2d90.38398704777796!3d23.779837301032686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7853d0881db%3A0x243f856bfe5481fc!2sDhaka%201212!5e0!3m2!1sen!2sbd!4v1582656209925!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="{{address.mapsrc | safe}}" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
 </div>
 

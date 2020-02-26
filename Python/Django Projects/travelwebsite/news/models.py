@@ -6,7 +6,7 @@ from django.utils import timezone
 
 # Create your models here.
 
-today = timezone.now
+today = timezone.datetime.now()
 class Category(models.Model):
     name = models.CharField(max_length=50)
     def __str__(self):
@@ -37,5 +37,6 @@ class Query(models.Model):
     email = models.CharField(max_length=70)
     subject = models.CharField(max_length=200)
     message = models.TextField()
-    date = models.DateField(default=today)
+    date = models.DateTimeField(default=today, blank=True)
+
 

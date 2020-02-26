@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.db.models import Q
-
 from .models import *
+from news.models import *
 # Create your views here.
 
 def index(request):
@@ -42,10 +42,10 @@ def destinations(request):
     testi = Testominal.objects.all()
     homesta = HomeStatic.objects.get(id= 1)
     res = Destination.objects.filter(
-        name__contains = city
-    ).all() | Destination.objects.filter(
-        price__contains = budget
-    ).all()
+                name__contains = city
+            ).all() | Destination.objects.filter(
+                price__contains = budget
+            ).all()
     cate = CategoryDes.objects.all()
     return render(request, 'destinations.html', {'result':res,
                                                   'footer': footercontact,
@@ -58,16 +58,27 @@ def about(request):
     footercontact = FooterContact.objects.all()
     testi = Testominal.objects.all()
     homesta = HomeStatic.objects.get(id= 1)
-    return render(request, 'about.html', {
+    aboutsta = about_us_fixed.objects.first()
+    field_value = aboutsta.brief.split('\n', 1)[0]
+    ab = aboutsta.brief.split('\n', 1)[1][:500]+'...'
+    why = why_choose_us.objects.all()
+    teams = team.objects.all().order_by('name')[:4]
+    return render(request, 'about.html', {'ab': ab,
+                                          'abs': aboutsta,
                                             'footer': footercontact,
                                             'testi': testi,
-                                            'homestatic': homesta})
+                                            'homestatic': homesta,
+                                            'field' : field_value,
+                                            'why': why,
+                                            'team': teams,
+                                          })
 
 def contact(request):
     footercontact = FooterContact.objects.all()
     testi = Testominal.objects.all()
     homesta = HomeStatic.objects.get(id= 1)
-    return render(request, 'contact.html', {
+    address = Address.objects.first()
+    return render(request, 'contact.html', {'address': address,
                                             'footer': footercontact,
                                             'testi': testi,
                                             'homestatic': homesta})
