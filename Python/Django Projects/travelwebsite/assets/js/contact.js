@@ -217,5 +217,6 @@ $(document).ready(function()
 			}, 1400);
 		});
 	}
+
 	
 });

@@ -3,8 +3,3 @@ window.setTimeout(function() {
         $(this).remove();
         });
     }, 5000);
-
-
-$(document).on('submit', '#contact_form',function(e){
-    console.log($('#contact_form').val())
-})

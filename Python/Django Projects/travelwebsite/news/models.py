@@ -18,10 +18,13 @@ class News(models.Model):
     date = models.DateField()
     title = models.CharField(max_length=200)
     desc = RichTextField(blank=True, null=True)
-    def save(self):
+    slug = models.SlugField(max_length=100, unique=True, blank=True)
+    readcount = models.IntegerField(default=0)
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
         if not self.img:
             return
-        super(News, self).save()
+        super(News, self).save(*args, **kwargs)
         image = Image.open(self.img)
         image = image.resize((750, 340), Image.ANTIALIAS)
         image.save(self.img.path)

@@ -220,5 +220,5 @@ $(document).ready(function()
 //	function send_msg(){
 //	    console.log($('#contact_form').val())
 //	}
-	
+
 });

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.contrib import messages
 from django.db.models import Q
 from .models import *
@@ -82,3 +82,17 @@ def contact(request):
                                             'footer': footercontact,
                                             'testi': testi,
                                             'homestatic': homesta})
+
+def sendmsg(request):
+    name = request.POST['name']
+    email = request.POST['email']
+    subject = request.POST['subject']
+    message = request.POST['message']
+    Query.objects.create(
+        name = name,
+        email = email,
+        subject = subject,
+        message = message
+    ).save()
+    messages.success(request, 'Subsciption successfully completed')
+    return redirect('/contact')
