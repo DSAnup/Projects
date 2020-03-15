@@ -1,7 +1,8 @@
 # Projects
   
 Python Folder:
-  - Web Develop with Django Web Scrapping & Crawling by scrapy, bs4, request library see profile.
+  - Web Develop with Django move to https://github.com/DSAnup/Django
+  - Web Scrapping & Crawling by scrapy, bs4, request library see profile move to https://github.com/DSAnup/Web-Scrapping-Crawling
   - document to pdf convert
   - file organization with python.
 PHP Folder:
