@@ -1,8 +1,7 @@
 # Projects
   
 Python Folder:
-  - Web Develop with Django
-  - Web Scrapping & Crawling by scrapy, bs4, request library.
+  - Web Develop with Django Web Scrapping & Crawling by scrapy, bs4, request library see profile.
   - document to pdf convert
   - file organization with python.
 PHP Folder:
